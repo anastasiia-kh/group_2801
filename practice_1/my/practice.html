@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pRACTICE</title>
+  <!--для ul ol сбрасываем padding-->
+  <style>
+    * {
+      box-sizing: border-box;
+      /*применяет конкретную ширину для нашего белого блока*/
+    }
+
+    html {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    body {
+      background-color: #253e52;
+    }
+
+    /*мы не можем влиять на размер body, это размер экрана*/
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    body {
+      /*обнуляем все margin для данных тегов*/
+      margin: 0;
+    }
+
+    .container {
+      width: 470px;
+      min-height: 80px;
+      /*лучше использовать вместо обычной высоты, height - это хард-код*/
+      background-color: #ffffff;
+      padding: 48px;
+      /*padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 30px;
+      padding-right: 30px;*/
+      margin: 40px auto;
+      /*margin auto - сам определяет позицию на экране*/
+      /*при условии, что у элемента фиксированная ширина*/
+      /* верх, право, низ, лево */
+      /* margin: 40px, 20px, 10px, 20px*/
+      /* margin-left: auto;
+      margin-top: 40px;
+      margin-right: auto;
+      margin-bottom: 40px;*/
+      text-align: center;
+      color: #325e82;
+      border-radius: 2px;
+      box-shadow: 0 0 10px 0 rgba(63, 78, 90, 0.11);
+    }
+
+    .header {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .browsers {
+      width: 100%;
+    }
+
+
+    .description,
+    .browsers {
+      margin-top: 20px;
+    }
+
+    .btn_confirm {
+      width: 104px;
+      height: 32px;
+      /* с кнопками можем использовать высоту*/
+      border-radius: 2px;
+      border: solid 1px #25a0d4;
+      background-color: #25a0d4;
+      color: #ffffff;
+      font-weight: bold;
+      margin-top: 45px;
+    }
+  </style>
+  <!--float не использовать для выстроения div в ряд-->
+  <!--margin: 40px auto;  где 40px это отступ сверху-->
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="header">You seem to be using an unsupported browser
+    </h2>
+    <p class="description">To get the most out of using the new Return Path
+      please login to the new experience with a supported browser.</p>
+    <table class="browsers">
+      <tr>
+        <td><img src="https://cdn.zeplin.io/5b0b20f0e1de18fc65af95b7/assets/AE23488C-EE71-494E-9DC5-74AFF438B3B4.svg">
+        </td>
+        <td><img src="https://cdn.zeplin.io/5b0b20f0e1de18fc65af95b7/assets/EC1AF759-5E72-4AA6-98D9-225233659D22.svg">
+        </td>
+        <td><img src="https://cdn.zeplin.io/5b0b20f0e1de18fc65af95b7/assets/B03858DA-5D7E-4694-BEB1-50F1C602D7A1.svg">
+        </td>
+        <td><img src="https://cdn.zeplin.io/5b0b20f0e1de18fc65af95b7/assets/8F243937-89C8-4DD6-9DCC-C5D6AF35D4CD.svg">
+        </td>
+        <td><img src="https://cdn.zeplin.io/5b0b20f0e1de18fc65af95b7/assets/CCE298C1-45C0-4B41-97BA-3E2791A5B1D1.svg">
+        </td>
+      </tr>
+      <tr>
+        <td>IE 10</td>
+        <td>Chrome</td>
+        <td>Mozila</td>
+        <td>Safari</td>
+        <td>Opera</td>
+      </tr>
+    </table>
+    <button class="btn_confirm"> Got It!</button>
+  </div>
+
+</body>
+
+</html>

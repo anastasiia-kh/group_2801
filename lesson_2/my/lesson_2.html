@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .hello-world {
+      color: blue;
+      border: 2px solid blue;
+      background-color: magenta;
+    }
+
+    label {
+      color: yellow;
+      border: 2px solid blue;
+      background-color: magenta;
+    }
+
+    .large-text {
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<ul>
+  <li><a href="" class="large-text">Hello</a></li>
+  <li><a href="">Hello</a></li>
+  <li><a href="">Hello</a></li>
+  <li><a href="">Hello</a></li>
+  <li><a href="" class="large-text">Hello</a></li>
+</ul>
+
+<ol>
+  <li><a class="hello-world" href="">Hello</a></li>
+  <li><a href="">Hello</a></li>
+  <li><a href="">Hello</a></li>
+  <li><a href="">Hello</a></li>
+  <li><a href="">Hello</a></li>
+  <li><a href="">Hello</a></li>
+</ol>
+
+<div>
+  <div><a href="">Hello</a></div>
+  <div><a href="">Hello</a></div>
+</div>
+
+<table>
+  <tr>
+    <td>Hello 1</td>
+    <td>Hello 2</td>
+    <td>Hello 3</td>
+    <td>Hello 4</td>
+    <td>Hello 5</td>
+  </tr>
+</table>
+
+<form action="">
+  <input type="text" />
+  <input type="date" />
+  <input type="color" />
+  <input type="week" />
+  <input type="submit" />
+  <input type="checkbox" />
+  <input type="radio" />
+  <input type="time" />
+</form>
+
+<p></p>
+
+<form method="POST" action="">
+  <!-- action = server-->
+  <!--POST - отправляет зашифрованные данные-->
+  <!--GET - данные не шифруются и видны в url-->
+  <label for="userNameInput" class="hello-world">Name: </label>
+  <input type="text" name="username" id="userNameInput" />
+  <label for="userPasswordInput">Password: </label>
+  <input type="password" name="userpassword" id="userPasswordInput" />
+  <input type="submit" />
+
+  <p></p>
+
+  <label for="genderMale" class="hello-world large-text">Male</label>
+  <input type="radio" name="Male" id="genderMale">
+  <label for="genderFemale">Female</label>
+  <input type="radio" name="Female" id="genderFemale">
+  <input type="submit" class="hello-world" />
+
+  <p></p>
+
+  <label for="terms">Agree with TOS</label>
+  <input type="checkbox" name="terms" value="Hello" id="terms">
+
+  <p></p>
+
+  <input type="button" value="Send Data" />
+  <button>Send Data</button>
+
+</form>
+
+
+
+</body>
+
+</html>

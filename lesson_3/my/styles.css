@@ -1,0 +1,41 @@
+*{
+box-sizing: border-box;}
+/* "*" - это селектор всех эелементов, используется редко */
+
+html{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body, ul, ol, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.article{
+  color: antiquewhite;
+  background: maroon;
+}
+#test{
+  background: lime;
+  color: blue;
+}
+/* стили по id не использовать */
+
+.article.active{
+  color: magenta;
+  text-decoration: underline;
+}
+/*в случае если два class-a прописаны у одного элемента*/
+.article active{
+  color: magenta;
+  text-decoration: underline;
+}
+.article >.active{
+  color: magenta;
+  text-decoration: underline;
+} /*селектор по вложенности,т.е. первый*.

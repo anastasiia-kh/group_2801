@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 25px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+}
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+form {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+button {
+  font-size: 1rem;
+}
+.content-wrapper {
+  width: 100%;
+  padding: 0 1rem;
+  max-width: calc(1200px + 2rem);
+  margin: 0 auto;
+}
+.text-regular {
+  font-weight: 500;
+}
+.text-bold {
+  font-weight: 800;
+}
+button {
+  cursor: pointer;
+  outline: none;
+}
+input {
+  outline: none;
+}
+::-webkit-input-placeholder {
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.521698px;
+  color: #3f3f3f;
+  opacity: 0.19;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>table</title>
+  <style>
+    .text {
+      text-align: left;
+    }
+
+    table {
+      width: 30%;
+      height: 120px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <table>
+      <caption>Добыча драгоценных камней</caption>
+      <tr>
+        <th> </th>
+        <th>2010</th>
+        <th>2012</th>
+        <th>2014</th>
+      </tr>
+      <tr>
+        <td class="text">Сапфиры</td>
+        <td rowspan="2">1483</td>
+        <td>4532</td>
+        <td>6743</td>
+      </tr>
+      <tr>
+        <td class="text">Рубины</td>
+        <td>3835</td>
+        <td>7482</td>
+      </tr>
+      <tr>
+        <td class="text">Алмазы</td>
+        <td>683</td>
+        <td colspan="2">238</td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

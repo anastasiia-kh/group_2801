@@ -1,0 +1,212 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.content {
+  margin-top: 30px;
+  position: absolute;
+}
+.content_header {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2.9px;
+  font-size: 22px;
+}
+.content_tabs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 234px;
+  padding: 5px;
+}
+.block_img-diary {
+  width: 100%;
+  height: 154px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://static.wixstatic.com/media/68c56f_8bc54bdcea4b4bdc85515620b236c1d4~mv2.jpg);
+}
+.block_img-screen-tennis {
+  width: 100%;
+  height: 154px;
+  background-image: url(https://static.wixstatic.com/media/68c56f_027fd8b4d27342bcae4ff8ca9c867497~mv2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.block_img-sheet {
+  width: 100%;
+  height: 154px;
+  background-image: url(https://static.wixstatic.com/media/68c56f_a0b54a375c2f42be8b4fe79eed642dbe~mv2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.block_img-cd {
+  width: 100%;
+  background-image: url(https://static.wixstatic.com/media/68c56f_04ae03e60c8f449088c5280fec628609~mv2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 154px;
+}
+.block_img-nature {
+  width: 100%;
+  background-image: url(https://static.wixstatic.com/media/68c56f_ef4efb61434f44f091e72bf1d120e2e6~mv2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 154px;
+}
+.block_img-screen-picture {
+  width: 100%;
+  background-image: url(https://static.wixstatic.com/media/68c56f_1dc55f29d4a0468186276c93b0b9753b~mv2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 154px;
+}
+.block_img-punk {
+  width: 100%;
+  background-image: url(https://static.wixstatic.com/media/68c56f_88b627bcfff04376bd41d1dd6fcb8ddf~mv2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 306px;
+}
+.block_img-social {
+  width: 100%;
+  background-image: url(https://static.wixstatic.com/media/68c56f_56915fdd705246708f411246e99cb738~mv2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 188px;
+}
+.block_img-phone {
+  width: 100%;
+  background-image: url(https://static.wixstatic.com/media/56292f_62ed900d263d40d6b9e74f5822c7c527.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 188px;
+}
+.content_footer {
+  margin-top: -100px;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+.footer-row {
+  width: 55%;
+  height: 100%;
+  margin: 0 auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  background-color: black;
+  height: 30px;
+}
+.footer-btn {
+  background-color: transparent;
+  border: none;
+  color: gray;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  padding-top: 0.5%;
+}
+.footer-btn:hover {
+  color: white;
+}
+.footer-bottom {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.footer-text {
+  width: 100%;
+  color: black;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin: 20px 0 10px 0;
+  padding: 0;
+}
+@media screen and (max-width: 1300px) {
+  .main-content {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+  }
+  .content {
+    width: 90%;
+  }
+  .content_header {
+    padding-top: 20px;
+    text-shadow: currentColor;
+    font-size: inherit;
+  }
+  .content_tabs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+  }
+  .column {
+    margin: 0;
+    padding: 0;
+  }
+  .img {
+    background-size: contain;
+    margin-bottom: 2px;
+  }
+  .footer {
+    margin: 0;
+    padding: 0;
+    height: 10px;
+    width: 100%;
+    background-color: rgba(191, 186, 186, 0.156);
+  }
+  .footer-row {
+    height: 100%;
+    align-items: center;
+    display: flex;
+  }
+  .footer-btn {
+    font-size: 7px;
+    color: black;
+    font-size: 6.2px;
+  }
+  .content_footer {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    height: 100%;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-text {
+    display: none;
+  }
+  .screen-block {
+    display: flex;
+    order: -1;
+  }
+  .sheet-block {
+    display: flex;
+    order: -1;
+  }
+  .block_img-punk {
+    height: 310px;
+    background-size: cover;
+  }
+}
