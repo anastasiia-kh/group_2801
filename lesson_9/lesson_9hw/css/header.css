@@ -9,7 +9,7 @@
 }
 
 .page-head {
-  min-height: 100vh;
+  min-height: 750px;
   width: 100%;
   position: relative;
   background-image: url(../assets/images/Rectangle@2x.png);
@@ -17,7 +17,7 @@
   background-position: center right;
   background-repeat: no-repeat;
   overflow: hidden;
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .logo svg {
@@ -44,6 +44,7 @@
   --block-height: 40px;
   display: flex;
   height: var(--block-height);
+  margin-top: 25px;
 }
 .nav__link {
   padding-bottom: 20px;

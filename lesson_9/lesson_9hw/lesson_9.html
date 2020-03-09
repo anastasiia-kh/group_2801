@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 8</title>
+    <title>Airbnb</title>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/content.css" />
     <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/form.css" />
 
   </head>
   <body>
@@ -53,9 +54,52 @@
       </footer>
     </section>
 
+    <div class="page-main main-form">
+      <div class="global-content content content_form">
+        <div class="form">
+          <h1 class="form_header">
+            Book unique places to stay and things to do.
+          </h1>
+          <div class="form_content ">
+            <p class="form_content-title">where</p>
+            <input class="form_content-input" type="search" placeholder="Anywhere" />
+          </div>
+          <div class="form_content-month">
+            <div class="form_content month_block">
+              <p class="form_content-title">check-in</p>
+              <input class="form_content-input month_block__input month_block__input-checkin " type="date"
+                placeholder="mm/dd/yyyy" />
+            </div>
+            <div class="form_content month_block">
+              <p class="form_content-title">checkout</p>
+              <input class="form_content-input month_block__input month_block__input-checkout" type="date"
+                placeholder="mm/dd/yyyy" />
+            </div>
+          </div>
+          <div class="form_content-month">
+            <div class="form_content month_block">
+              <p class="form_content-title">adults</p>
+              <input class="form_content-input month_block__input month_block__input-checkin " type="text"
+                placeholder="1 adult" />
+            </div>
+            <div class="form_content month_block">
+              <p class="form_content-title">choldren</p>
+              <input class="form_content-input month_block__input month_block__input-checkout" type="text"
+                placeholder="0 children" />
+            </div>
+          </div>
+          <div class="form-btn">
+            <button class="form-btn-search">
+              Search
+            </button>
+          </div>
+        </div>
+     </div>
+    </div>
+
     <section class="section-explore page-main">
       <div class="global-content content">
-        <p class="content__header ">
+        <p class="content__header explore_header ">
           Explore Airbnb
         </p>
         <div class="explore-content grid-container">
@@ -288,7 +332,6 @@
         </div>
       </div>
     </section>
-
 
     <section class="section-places page-main">
       <div class="global-content places content ">
@@ -699,7 +742,6 @@
         </div> 
       </div>
     </section>
-
 
     <script>
       btn.onclick = function() {
