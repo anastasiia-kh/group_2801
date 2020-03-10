@@ -1,13 +1,33 @@
+:root {
+  --spacing: 24px;
+}
+
+@media (max-width: 4500px) {
+  .col-sign_price_row {
+    margin-bottom: 0px;
+  }
+  .col-sign_description {
+    height: auto;
+  }
+
+  .show-adventures {
+    margin-top: 40px;
+  }
+}
 @media (max-width: 1600px) {
+  .col-sign_price_row {
+    margin-top: 15px;
+  }
+
   .page-head {
     height: 650px;
   }
-
-  .content_form {
-    padding-left: 200px;
-  }
 }
 @media (max-width: 1300px) {
+  .introduce_content__col-img {
+    height: auto;
+  }
+
   .content {
     padding-left: 60px;
     padding-right: 60px;
@@ -24,10 +44,13 @@
   .col-sign_description {
     height: 20px;
   }
-}
-@media (max-width: 1300px) {
+
   .nepal {
     display: none;
+  }
+
+  .show-adventures {
+    margin-top: 50px;
   }
 }
 @media (max-width: 1100px) {
@@ -43,12 +66,8 @@
     top: 0px;
   }
 
-  .global-footer {
+  .page-head-footer {
     visibility: hidden;
-  }
-
-  :root {
-    --spacing: 24px;
   }
 
   .global-menu {
@@ -79,25 +98,30 @@
     font-weight: 300;
   }
 
-  .nav {
+  .nav-desctop {
+    display: none;
+  }
+
+  .nav-mobile {
     margin-top: 0;
     z-index: 99;
-    display: flex;
+    display: flex !important;
     visibility: hidden;
     height: auto;
     flex-direction: column;
     background: var(--header-text-color);
     width: 100vw;
-    height: 810px !important;
-    position: absolute;
+    height: 100vh !important;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 88px var(--spacing) var(--spacing);
     overflow: scroll;
+    z-index: 4;
   }
 
   .nav__link {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
     margin: 0;
     padding: 9px 0;
@@ -106,8 +130,14 @@
   }
 
   .nav__link:hover {
-    color: #1d5051;
-    font-weight: 500;
+    color: #153b3b;
+  }
+
+  .home,
+.airbnb,
+.currency,
+.expirience {
+    padding-bottom: var(--spacing);
   }
 
   .home::after {
@@ -243,15 +273,20 @@
     padding: 30px 60px 0 60px !important;
   }
   .form_header {
-    width: 100% !important;
+    width: 55% !important;
     margin-bottom: 120px;
     color: white !important;
     z-index: 33;
-    font-size: 2.3rem;
+    font-size: 1.6rem;
+    letter-spacing: normal;
   }
 
   .section-explore {
     margin-top: -160px;
+  }
+
+  .traveling {
+    margin-top: 50px;
   }
 }
 @media (max-width: 700px) {
@@ -264,16 +299,13 @@
   }
 
   .content_form {
-    top: -100px !important;
+    top: -115px !important;
     min-height: 470px !important;
   }
 
-  .form {
-    width: 100%;
-  }
   .form_header {
-    font-size: 1.5rem;
-    margin-bottom: 70px;
+    font-size: 1.1rem;
+    margin-bottom: 80px;
   }
 
   .section-explore {
@@ -291,6 +323,7 @@
 
   .col-sign {
     font-size: 0.7rem;
+    height: auto;
   }
 
   .explore-btn {
@@ -323,7 +356,7 @@
   }
 
   .italy {
-    display: block;
+    display: flex;
   }
 
   .plus__content-img {
@@ -368,9 +401,9 @@
     top: 85px;
   }
 
-  .content-btn-center {
+  .plus__content-btn-center {
     width: 100px;
-    height: 30px;
+    height: 50%;
   }
 
   .plus__content-btn-center-name {
@@ -379,10 +412,7 @@
 
   .plus__content-btn-center-name:after {
     font-size: 1.5rem;
-  }
-
-  .show-all {
-    padding-top: 10px;
+    top: -2px;
   }
 
   .content__header {
@@ -399,10 +429,6 @@
     font-size: 0.4rem;
   }
 
-  .place__title {
-    font-size: 0.5rem;
-  }
-
   .col-sign_rating,
 .place__footer {
     margin-bottom: 15px;
@@ -415,22 +441,35 @@
   .place {
     min-height: 197px;
   }
+  .place__title {
+    font-size: 0.5rem;
+  }
 
   .form_header {
-    font-size: 1rem;
-  }
-
-  .plus__content-btn-center {
-    width: 100px;
-    height: 50%;
-  }
-
-  .plus__content-btn-center-name:after {
-    top: -2px;
+    font-size: 0.8rem;
+    margin-bottom: 90px;
   }
 
   .section-explore {
     margin-top: -180px;
+  }
+
+  .global_footer,
+.reserved {
+    font-size: 0.47rem;
+  }
+
+  .section-traveling {
+    display: none;
+  }
+
+  .introduce_content__col {
+    margin-bottom: 0px;
+    height: 350px;
+  }
+
+  .col-sign_price_row {
+    margin-top: 5px;
   }
 }
 @media (max-width: 350px) {
@@ -451,8 +490,9 @@
   }
 
   .form_header {
-    font-size: 1rem;
-    margin-bottom: 50px;
+    font-size: 0.7rem;
+    margin-bottom: 55px;
+    width: 70% !important;
   }
 }
 @media (max-width: 320px) {
@@ -469,21 +509,30 @@
     width: 80px;
   }
 
-  .plus__content-btn {
-    top: 55px;
-  }
-
   .plus__content {
     height: 110px;
+  }
+  .plus__content-btn {
+    top: 55px;
   }
 
   .explore-btn {
     height: 70px;
   }
+
+  .form_header {
+    margin-bottom: 65px;
+    width: 100% !important;
+  }
 }
 @media (max-width: 250px) {
   .content_form {
     min-height: 520px !important;
+  }
+
+  .form_header {
+    font-size: 0.5rem;
+    margin-bottom: 65px;
   }
 }
 
