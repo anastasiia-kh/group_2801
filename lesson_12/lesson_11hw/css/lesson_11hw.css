@@ -1,0 +1,27 @@
+.main {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-btn {
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  width: 100px;
+  height: 50px;
+  outline: none;
+  box-shadow: 1px 1px 6px grey;
+}
+.main-text {
+  margin-top: 10px;
+  color: #043804;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+
+/*# sourceMappingURL=lesson_11hw.css.map */
