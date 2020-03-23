@@ -1,0 +1,17 @@
+.pager {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+.pager__btn {
+  border-radius: 50%;
+  background: #000000a8;
+  width: 15px;
+  height: 15px;
+  outline: none;
+}
+
+/*# sourceMappingURL=pager.css.map */

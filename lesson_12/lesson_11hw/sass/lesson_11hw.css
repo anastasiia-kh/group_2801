@@ -1,0 +1,38 @@
+.main {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-btn {
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  width: 100px;
+  height: 50px;
+  outline: none;
+  -webkit-box-shadow: 1px 1px 6px grey;
+          box-shadow: 1px 1px 6px grey;
+}
+
+.main-text {
+  margin-top: 10px;
+  color: #043804;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=lesson_11hw.css.map */

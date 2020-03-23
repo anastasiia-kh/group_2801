@@ -1,0 +1,156 @@
+:root {
+  --main-color: rgba(197, 197, 197, 0.347);
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.form {
+  width: 340px;
+  height: 208px;
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
+  margin: 20px auto 0;
+  -webkit-box-shadow: 0px 0px 3px rgba(170, 169, 169, 0.796);
+          box-shadow: 0px 0px 3px rgba(170, 169, 169, 0.796);
+}
+
+.form-top {
+  height: 150px;
+  padding: 14px 18px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-bottom {
+  position: absolute;
+  width: 100%;
+}
+
+.inputName_form::-webkit-input-placeholder {
+  -webkit-box-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.inputName_form:-ms-input-placeholder {
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 10px;
+}
+
+.inputName_form::-ms-input-placeholder {
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 10px;
+}
+
+.inputName_form::placeholder {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.form-bottom_btn {
+  margin: 0px 18px;
+  position: absolute;
+  background-color: #65A8B1;
+  border-radius: 5px;
+  color: white;
+  width: 90%;
+  height: 25px;
+  padding: 0;
+}
+
+.form-bottom_btn:hover {
+  -webkit-box-shadow: 1px 1px 4px grey;
+          box-shadow: 1px 1px 4px grey;
+}
+
+.form-bottom_btn:active {
+  -webkit-box-shadow: 2px 2px 6px grey;
+          box-shadow: 2px 2px 6px grey;
+}
+
+.inputName {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.inputName_form {
+  background-color: var(--main-color);
+  height: 25px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.inputText {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.inputText_form {
+  background-color: var(--main-color);
+  height: 106px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+textarea,
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+input {
+  white-space: pre-line;
+}
+
+.form-new_name {
+  position: absolute;
+  bottom: 7px;
+  right: 20px;
+  color: grey;
+  font-style: italic;
+}
+
+.form-new_text {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 130px;
+  overflow-y: auto;
+  white-space: pre-line;
+}
+/*# sourceMappingURL=hw.css.map */

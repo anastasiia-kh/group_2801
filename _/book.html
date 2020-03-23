@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 id="main-heading">Привет, мир!</h1>
+  <button onclick="myFunction()">Try it</button>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+  <script>
+    // var newHeadingText = prompt("Введите новый заголовок:");
+    // $("#main-heading").text(newHeadingText);
+
+    // $("body").append("<p>Это новый параграф</p>");
+
+
+
+    function myFunction() {
+      // debugger;
+      var message = Number(prompt("%^&"));
+
+      for (var i = 1; i <= message; i++) {
+        var btn = document.createElement("button");
+        if (isNaN(message)) {
+          alert('qwertyuio');
+        } else {
+          document.body.append(btn);
+        }
+      };
+
+    }
+  </script>
+
+</body>
+
+</html>

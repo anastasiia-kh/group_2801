@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,CAAC;EACT,IAAI,EAAE,GAAG;EACT,SAAS,EAAE,gBAAgB;EAC3B,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAYxB;;AAVE,AAAD,WAAM,CAAC;EAEL,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,SAAS;EACrB,KAAK,EAHM,IAAI;EAIf,MAAM,EAJK,IAAI;EAKf,OAAO,EAAE,IAAI;CAGd",
+    "sources": [
+        "pager.scss"
+    ],
+    "names": [],
+    "file": "pager.css"
+}
