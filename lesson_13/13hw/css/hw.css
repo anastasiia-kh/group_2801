@@ -1,5 +1,5 @@
 :root {
-  --main-color:rgba(197, 197, 197, 0.347);
+  --main-color: rgba(197, 197, 197, 0.347);
 }
 
 body {
@@ -30,6 +30,8 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  background-color: aliceblue;
+  backgroundColor
 }
 
 .form-bottom {

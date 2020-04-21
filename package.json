@@ -1,0 +1,23 @@
+{
+  "name": "group_2802",
+  "version": "1.0.0",
+  "description": "`sass --watch lesson_9/sass:lesson_9/css` команда для запуска компиляции sass в css",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anastasiia-kh/group_2801.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anastasiia-kh/group_2801/issues"
+  },
+  "homepage": "https://github.com/anastasiia-kh/group_2801#readme",
+  "devDependencies": {
+    "http-server": "^0.12.1",
+    "sass": "^1.26.3"
+  }
+}
